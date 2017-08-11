@@ -1,0 +1,121 @@
+@r:50rem;
+
+a,
+input,
+button {
+    /*清除点击阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+    /*清除按钮的圆角*/
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+    /*选中文字设置*/
+  margin: 0;
+  -webkit-user-select: none;
+}
+body * {
+    /*文字设置*/
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+body {
+    /*禁止文字缩放*/
+  -webkit-text-size-adjust: 100%;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#box{
+    width: 100%;
+    height: auto;
+    position: relative;
+    #header{
+        position: fixed;
+        left: 0;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        height: 100/@r;
+        line-height: 100/@r;
+        background: -webkit-linear-gradient(top,#292929,#1d1f1d);
+        background: -moz-linear-gradient(top,#292929,#1d1f1d);
+        color: #fff;
+        .btn{
+            width: 104/@r;
+            height: 68/@r;
+            border: 2/@r solid #000;
+            font-size: 26/@r;
+            color: #fff;
+            display: inline-block;
+            text-decoration: none;
+            position: absolute;
+            top: 12/@r;
+         }
+        .btn:nth-child(1){
+            left: 20/@r;
+        } 
+        .btn:nth-child(2){
+            right: 20/@r;
+        } 
+    }
+}
+
+#imglist{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 100/@r;
+    left: 0;
+    #wrap{
+        width: 100%;
+        position: relative;
+        li{
+            width: 250/@r;
+            height: 250/@r;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            position: absolute;
+//          left: 0;
+//          top: 0;
+            transition: all 0.5s; 
+            img{
+                display: block;
+                width: 250/@r;
+                height: 250/@r;
+            }
+        }
+    }
+}
+
+#footer{
+    width: 100%;
+    height: 150/@r;
+    clear: both;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: -webkit-linear-gradient(top,#1e1e1e,#121212);
+    .btn2{
+        width: 50%;
+        height: 150/@r;
+        display: inline-block;
+        font-size: 26/@r;
+        line-height: 150/@r;
+        color: #FFF;
+        text-align: center;  
+        text-decoration: none;
+        float: left;
+       
+    }
+    .active{
+          background: -webkit-linear-gradient(top,#0f0f0d,#070707); 
+    }
+}

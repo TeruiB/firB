@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>My first Bootstrap</title>
+		<!--提高ie浏览器的性能和渲染速度-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--让移动端适用该页面-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="https://passport.yhd.com/front-passport/passport/images/yhd_favicon.ico">
+		<link rel="stylesheet" type="text/css" href="bs/css/bootstrap.css"/>
+		<script src="bs/js/jquery.min.js"></script>
+		<script src="bs/js/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<style>
+			body, h1, h2, h3, h4, h5, h6 {
+			    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+			    font-weight: 700;
+			}
+			.intro-header{
+				padding-top: 50px;
+				padding-bottom: 50px;
+				text-align: center;
+				color: #f8f8f8;
+				background: url(img/net/intro-bg.jpg) no-repeat center center;
+				background-size: cover;
+			}
+			.intro-message{
+				position: relative;
+				padding-top: 20%;
+				padding-bottom: 20%;
+			}
+			
+			.intro-message>h1{
+				margin: 0;
+				text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+				font-size: 5em;
+			}
+			@media only screen and (max-width: 767px){
+				 .intro-message>h1{
+				font-size: 3em;
+				}
+			}
+			.intro-message>h3{
+				text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+			}
+			.intro-divider{
+				width: 400px;
+				border-top: 1px solid #f8f8f8;
+				border-bottom: 1px solid rgba(0,0,0,0.2);
+			}
+			.network-name{
+				text-transform: uppercase;
+				font-size: 14px;
+				font-weight: 400;
+				letter-spacing: 2px;
+			}
+			.content-section-a{
+				padding: 50px 0;
+				background-color: #f8f8f8;
+			}
+			.section-heading-spacer{
+				float: left;
+				width: 200px;
+				border-top: 3px solid #e7e7e7;
+			}
+			.section-heading{
+				margin-bottom: 30px;
+				line-height: 1.42857143;
+			}
+			.lead{
+				font-size: 18px;
+				font-weight: 400;
+			}
+			
+			.content-section-b {
+			    padding: 50px 0;
+			    border-top: 1px solid #e7e7e7;
+			    border-bottom: 1px solid #e7e7e7;
+			}
+			.banner {
+			    padding: 100px 0;
+			    color: #f8f8f8;
+			    background: url(img/net/banner-bg.jpg) no-repeat center center;
+			    background-size: cover;
+			}
+			.banner-social-buttons {
+			    float: right;
+			    margin-top: 0;
+			}
+			.banner ul {
+			    margin-bottom: 0;
+			}
+			.banner h2{
+				margin: 0;
+				text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+				font-size: 3em;
+			}
+			footer{
+				padding: 50px 0;
+				background-color: #f8f8f8;
+			}
+			p.copyright{
+				margin: 15px 0 0 ;
+			}
+			.title{
+				line-height: 1.42857143;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Navigation-->		
+		<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="javascript:;" class="navbar-brand topnav">First BootStrap</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="###">About</a></li>
+						<li><a href="###">Services</a></li>
+						<li><a href="###">Contact</a></li>
+					</ul>
+				</div>
+				<a href="###" class="about"></a>
+			</div>
+		</nav>
+		<div class="intro-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="intro-message">
+							<h1>Landing Page</h1>
+							<h3>A Template by Start Bootstrap</h3>
+							<hr class="intro-divider" />
+							<ul class="list-inline intro-social-buttons">
+								<li>
+									<a href="###" class="btn btn-default btn-lg">
+										<i class="fa fa-twitter fa-fw"></i>
+										<span class="network-name">Twitter</span>
+									</a>
+								</li>
+								<li>
+		                            <a href="###" class="btn btn-default btn-lg">
+		                              	<i class="fa fa-github fa-fw"></i> 
+		                               	<span class="network-name">Github</span>
+		                            </a>
+		                        </li>
+		                        <li>
+		                            <a href="#" class="btn btn-default btn-lg">
+		                              	<i class="fa fa-linkedin fa-fw"></i> 
+		                               	<span class="network-name">Linkedin</span>
+		                            </a>
+		                        </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a name="services"></a>
+		<div class="content-section-a">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-sm-6">
+						<hr class="section-heading-spacer" />
+						<div class="clearfix">
+							
+						</div>
+						<h2 class="section-heading">
+							Death to the Stock Photo:
+							<br />
+							Special Thanks
+						</h2>
+						<p class="lead">
+							A special thanks to 
+							<a target="_blank" href="###">Death to the Stock Photo</a>
+							for providing the photographs that you see in this template. Visit their website to become a member.
+						</p>
+					</div>
+					<div class="col-lg-5 col-lg-offset-2 col-sm-6">
+						<img src="img/net/ipad.png" alt="" class="img-responsive"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-section-b">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
+						<hr class="section-heading-spacer" />
+						<div class="clearfix"></div>
+						<h2 class="section-heading">
+							3D Device Mockups
+							<br />
+							by PSDCovers
+						</h2>	
+						<p class="lead">
+							Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by 
+							<a target="_blank" href="###">PSDCovers</a>! 
+							Visit their website to download some of their awesome, free photoshop actions!
+						</p>
+					</div>
+					<div class="col-lg-5 col-sm-pull-6 col-sm-6">
+						<img src="img/net/dog.png" alt="" class="img-responsive"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-section-a">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-5 col-sm-6">
+	                    <hr class="section-heading-spacer">
+	                    <div class="clearfix"></div>
+	                    <h2 class="section-heading">
+	                    	Google Web Fonts and
+	                    	<br>
+	                    	Font Awesome Icons
+	                    </h2>
+	                    <p class="lead">
+	                    	This template features the 'Lato' font, part of the 
+	                    	<a target="_blank" href="###">
+	                    		Google Web Font library</a>, 
+	                    		as well as 
+	                    		<a target="_blank" href="###">
+	                    			icons from Font Awesome
+	                    		</a>.
+	                    </p>
+	                </div>
+	                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+	                    <img class="img-responsive" src="img/net/phones.png" alt="">
+	                </div>
+	            </div>
+	
+	        </div>
+	        <!-- /.container -->
+	    </div>
+	    <a name="contact"></a>
+	    <div class="banner">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-6">
+	                    <h2 class="title">Connect to Start Bootstrap:</h2>
+	                </div>
+	                <div class="col-lg-6">
+	                    <ul class="list-inline banner-social-buttons">
+	                        <li>
+	                            <a href="###" class="btn btn-default btn-lg">
+	                            	<i class="fa fa-twitter fa-fw"></i> 
+	                            	<span class="network-name">Twitter</span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="###" class="btn btn-default btn-lg">
+	                            	<i class="fa fa-github fa-fw"></i>
+	                            	<span class="network-name">Github</span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="###" class="btn btn-default btn-lg">
+	                            	<i class="fa fa-linkedin fa-fw"></i> 
+	                            	<span class="network-name">Linkedin</span>
+	                            </a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- /.container -->
+	    </div>
+	    <footer>
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-12">
+	    				<ul class="list-inline">
+	    					<li>
+	    						<a href="###">Home</a>
+	    					</li>
+	    					<li class="footer-menu-divider">⋅</li>
+	    					<li>
+	    						<a href="###">About</a>
+	    					</li>
+	    					<li class="footer-menu-divider">⋅</li>
+	    					<li>
+	    						<a href="###">Services</a>
+	    					</li>
+	    					<li class="footer-menu-divider">⋅</li>
+	    					<li>
+	    						<a href="###">Contact</a>
+	    					</li>
+	    				</ul>
+	    				<p class="copyright text-muted small">Copyright © Your Company 2014. All Rights Reserved</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </footer>
+	</body>
+</html>
